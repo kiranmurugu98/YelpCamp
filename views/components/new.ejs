@@ -1,0 +1,90 @@
+<% layout('layout/commonpage') %>
+
+
+    <div class="row">
+        <h1 class='text-center'>Create New Campground Here!!</h1>
+        <div class='col-md-6 offset-md-3'>
+
+            <form method="post" action='/index' class="formValid" novalidate enctype="multipart/form-data">
+                <div class='mb-3'>
+                    <label class="form-label" for="title"><b>Title</b></label>
+                    <input class="form-control" type="text" id='title' name='title' required>
+                    <div class=" valid-feedback">
+                        Title ok!
+                    </div>
+                    <div class='invalid-feedback'>
+                        Enter the Title !
+                    </div>
+                </div>
+
+                <div class='mb-3'>
+                    <label class="form-label" for="location"><b>location :</b></label>
+                    <input class="form-control" type="text" id='location' name='location' required>
+                    <div class=" valid-feedback">
+                        location ok!
+                    </div>
+                    <div class='invalid-feedback'>
+                        Enter the Correct Location !
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="price"><b>Campground Price :</b></label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">₹</span>
+                        <input type="text" class="form-control" id="price" placeholder="Enter the Amount min of ₹100"
+                            aria-label="price" aria-describedby="price-label" name="price" required>
+                        <div class=" valid-feedback">
+                            Price ok!
+                        </div>
+                        <div class='invalid-feedback'>
+                            Enter the Accurate Price !
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class='mb-3'>
+                    <label class="form-label" for="img"><b>Img Url :</b></label>
+                    <input class="form-control" type="text" id='img' name='img' required>
+                    <div class=" valid-feedback">
+                        Image Url ok!
+                    </div>
+                    <div class='invalid-feedback'>
+                        Enter the Correct Url !
+                    </div>
+                </div> -->
+                <div class="mb-3 custom-file">
+                    <label for="formFile" class="form-label custom-file-label"><b>Upload Images :</b></label>
+                    <input class="form-control" type="file" id="formFile" name="image" multiple required>
+                    <div class=" valid-feedback">
+                        Image is ok!
+                    </div>
+                    <div class='invalid-feedback'>
+                        Upload the Images !
+                    </div>
+                </div>
+
+                <div class='mb-3'>
+                    <label class="form-label" for="description"><b>Description :</b></label>
+                    <input class="form-control" type="text" id='description' name='description' required>
+                    <div class=" valid-feedback">
+                        Description ok!
+                    </div>
+                    <div class='invalid-feedback'>
+                        Enter the Correct Description !
+                    </div>
+                </div>
+                <div class='mb-1'><button class="bi bi-save2-fill btn btn-info "><b>
+
+                            Submit</b></button>
+                    <span><a href=" /index" class="bi bi-skip-backward-fill btn btn-primary"> Back To All
+                            Campground</a></span>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
